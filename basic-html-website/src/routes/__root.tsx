@@ -1,19 +1,15 @@
-import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+import {createRootRoute, Outlet} from '@tanstack/react-router'
+import {TanStackRouterDevtools} from '@tanstack/react-router-devtools'
+import {NavigationBar} from "@/components/layout/navigation-bar/navigation-bar.tsx";
 
 const RootLayout = () => (
     <>
-        <div className="p-2 flex gap-2">
-            <Link to="/">
-                Home
-            </Link>{' '}
-            <Link to="/about">
-                About
-            </Link>{' '}
-        </div>
-        <Outlet />
-        <TanStackRouterDevtools />
+        <main className={"max-container"}>
+            <NavigationBar/>
+            <Outlet/>
+        </main>
+        <TanStackRouterDevtools/>
     </>
 )
 
-export const Route = createRootRoute({ component: RootLayout })
+export const Route = createRootRoute({component: RootLayout})
