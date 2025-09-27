@@ -1,4 +1,7 @@
 import {createFileRoute} from '@tanstack/react-router'
+import { Typography } from 'antd';
+
+const { Title } = Typography;
 
 export const Route = createFileRoute('/')({
     component: Index,
@@ -6,8 +9,8 @@ export const Route = createFileRoute('/')({
 
 function Index() {
     return (
-        <div>
-            <h3>Welcome Home!</h3>
-        </div>
+        <>
+            <Title level={3}> Vladislau</Title>
+        </>
     )
 }
