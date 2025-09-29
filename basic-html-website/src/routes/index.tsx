@@ -9,8 +9,8 @@ export const Route = createFileRoute('/')({
 
 function Index() {
     return (
-        <>
-            <Divider style={{borderColor: "black", borderTopWidth: 3 }}/>
+        <div style={{paddingLeft: "40px", paddingRight: "40px"}}>
+            <Divider style={{borderColor: "black", borderTopWidth: 2 }}/>
             <SectionTitle text="Uladislau"/>
             <DetailBlock title={"Intern Frontend Developer"} content={"Mazurov street 58" +
                 "\n Homel 246006 \n (25) 632-37-09 \n vladik5882@mail.ru"}/>
@@ -25,6 +25,6 @@ function Index() {
                 " Location: Warsaw"} content={"Month 2025 to current"}/>
 
             <DetailBlock title={"Across the Internet"} content={"https://github.com/Toxin-code"}/>
-        </>
+        </div>
     )
 }
