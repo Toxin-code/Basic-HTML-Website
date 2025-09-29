@@ -3,7 +3,7 @@ import {Divider} from "antd";
 
 export const AboutMainContent = () => {
     return (
-        <div style={{display: "flex"}}>
+        <div style={{display: "flex", borderBottom: "2px solid black"}}>
             <div style={{flexDirection: "column", borderRight: "2px solid black"}}>
                 <Description titleFontSize="22px" title="Projects" content="HTML +Libs Portfolio"/>
                 <Divider style={{borderColor: "black", borderWidth: "2px", marginBottom: "12px", marginTop: "12px"}}/>
